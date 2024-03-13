@@ -1,10 +1,8 @@
-
-
 const PerformanceSection = () => {
   return (
     <div className="mt-4">
       <div className="p-5">
-        <h1 className="text-3xl font-bold mb-6">Performance</h1>
+        <h1 className="text-3xl font-semibold mb-6">Performance</h1>
         <div>
           <ul>
             <li className="my-4 flex justify-between">
@@ -34,6 +32,6 @@ const PerformanceSection = () => {
       </div>
     </div>
   );
-}
+};
 
-export default PerformanceSection
+export default PerformanceSection;

@@ -3,7 +3,7 @@ import robin from "../assets/robin.png";
 const Team = () => {
   return (
     <section className="p-5 my-6">
-      <h1 className="text-3xl font-bold my-5">Team</h1>
+      <h1 className="text-3xl font-semibold my-5">Team</h1>
       <p className="text-lg my-5">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita,
         iste? Adipisci at distinctio, molestiae dolore earum mollitia? Eos natus

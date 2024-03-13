@@ -19,7 +19,7 @@ const Tokenomics = () => {
 
   return (
     <section className="my-6 p-5">
-      <h1 className="text-3xl font-bold my-3">Tokenomics</h1>
+      <h1 className="text-3xl font-semibold my-3">Tokenomics</h1>
       <h1 className="text-2xl my-5">Initial Distribution</h1>
       <div className="flex gap-5">
         <div className=" h-[15rem] w-[15rem]">

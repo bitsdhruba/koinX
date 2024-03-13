@@ -1,10 +1,10 @@
 const AboutBitcoin = () => {
   return (
     <div className="p-5 my-5 ">
-      <h1 className="text-3xl font-bold mb-5">About Bitcoin</h1>
+      <h1 className="text-3xl font-semibold mb-5">About Bitcoin</h1>
       <section className="border-b border-slate-200 mb-4">
-        <h2 className="text-2xl font-bold mb-4">What is Bitcoin</h2>
-        <p className="text-xl mb-3 font-bold text-slate-700">
+        <h2 className="text-2xl font-semibold mb-4">What is Bitcoin</h2>
+        <p className="text-xl mb-3 font-medium text-slate-700">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe
           voluptatem earum ut consequatur neque exercitationem maiores, sequi
           sunt, tenetur nesciunt amet a obcaecati ea autem. Et suscipit ipsa
@@ -14,7 +14,7 @@ const AboutBitcoin = () => {
         </p>
       </section>
       <section className="border-b border-slate-200">
-        <h1 className="text-2xl font-bold mb-4">
+        <h1 className="text-2xl font-medium mb-4">
           Lorem ipsum dolor sit amet consectetur{" "}
         </h1>
         <p className="text-xl mb-6 text-slate-700">

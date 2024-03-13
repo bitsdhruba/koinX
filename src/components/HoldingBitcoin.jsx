@@ -1,10 +1,11 @@
 import profit from "../assets/profit.png";
 import tax from "../assets/tax.png";
+import { GoArrowRight } from "react-icons/go";
 
 const HoldingBitcoin = () => {
   return (
     <section className="my-5 p-5">
-      <h1 className="text-3xl font-bold my-3">Already Holding Bitcoin</h1>
+      <h1 className="text-3xl font-semibold my-3">Already Holding Bitcoin</h1>
       <div className="flex justify-between my-6">
         <div className="w-[48%] h-[12rem] p-3 rounded-lg bg-gradient-to-br from-teal-500 to-cyan-800 flex">
           <div className="w-2/5 bg-cover flex items-center">
@@ -18,8 +19,11 @@ const HoldingBitcoin = () => {
             <h1 className="text-white text-2xl font-bold">
               Calculate Your Profits
             </h1>
-            <button className="bg-white w-[9rem] h-[2rem] mt-6 rounded-lg text-lg ">
-              Check Now
+            <button className="bg-white w-[9.25rem] h-[2.25rem] p-2 mt-6 rounded-xl text-lg font-medium flex items-center justify-center">
+              Check Now{" "}
+              <span className="mx-2">
+                <GoArrowRight />
+              </span>
             </button>
           </div>
         </div>
@@ -31,8 +35,11 @@ const HoldingBitcoin = () => {
             <h1 className="text-white text-2xl font-bold">
               Calculate Your Tax Liability
             </h1>
-            <button className="bg-white w-[9rem] h-[2rem] mt-6 rounded-lg text-lg ">
-              Check Now
+            <button className="bg-white w-[9.25rem] h-[2.25rem] p-2 mt-6 rounded-xl text-lg font-medium flex items-center justify-center">
+              Check Now{" "}
+              <span className="mx-2">
+                <GoArrowRight />
+              </span>
             </button>
           </div>
         </div>

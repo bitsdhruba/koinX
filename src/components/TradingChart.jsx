@@ -1,7 +1,7 @@
 // TradingViewWidget.jsx
-import{ useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
-const Trading = function TradingViewWidget() {
+const TradingChart = function TradingViewWidget() {
   const container = useRef();
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const Trading = function TradingViewWidget() {
         {
           "symbols": [
             [
-              "BITSTAMP:BTCUSD|1D"
+              "BITSTAMP:BTCUSD|ALL"
             ]
           ],
           "chartOnly": false,
@@ -36,10 +36,10 @@ const Trading = function TradingViewWidget() {
           "valuesTracking": "1",
           "changeMode": "price-and-percent",
           "chartType": "line",
-          "maLineColor": "#055ef7",
+          "maLineColor": "#2962FF",
           "maLineWidth": 1,
           "maLength": 9,
-          "lineWidth": 2,
+          "lineWidth": 3,
           "lineType": 0,
           "dateRanges": [
             "1d|1",
@@ -48,7 +48,9 @@ const Trading = function TradingViewWidget() {
             "12m|1D",
             "60m|1W",
             "all|1M"
-          ]
+          ],
+          "lineColor": "rgba(49, 121, 245, 1)",
+          "color": "rgba(49, 121, 245, 1)"
         }`;
     container.current.appendChild(script);
   }, []);
@@ -67,6 +69,6 @@ const Trading = function TradingViewWidget() {
       </div>
     </div>
   );
-}
+};
 
-export default Trading;
+export default TradingChart;
