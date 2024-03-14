@@ -1,5 +1,5 @@
-import profit from "../assets/profit.png";
-import tax from "../assets/tax.png";
+import profit from "../../../../assets/profit.png";
+import tax from "../../../../assets/tax.png";
 import { GoArrowRight } from "react-icons/go";
 
 const HoldingBitcoin = () => {

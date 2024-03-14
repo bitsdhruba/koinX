@@ -1,4 +1,4 @@
-import robin from "../assets/robin.png";
+import robin from "../../../../assets/robin.png";
 
 const Team = () => {
   return (

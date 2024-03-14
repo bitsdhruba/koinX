@@ -1,5 +1,6 @@
 import { GoArrowRight } from "react-icons/go";
-import join from "../assets/joinKoinX.png";
+import join from "../../../assets/join.png";
+import { Link } from "react-router-dom";
 
 const GettingStarted = () => {
   return (
@@ -14,12 +15,14 @@ const GettingStarted = () => {
       <div>
         <img src={join} alt="join Koinx" className="bg-cover bg-no-repeat" />
       </div>
-      <button className="bg-white w-[15rem] h-[3rem] text-xl rounded-lg flex items-center justify-center mt-2 p-2">
-        Get Started for FREE{" "}
-        <span className="mx-2">
-          <GoArrowRight />
-        </span>
-      </button>
+      <Link to="/getStart">
+        <button className="bg-white w-[15rem] h-[3rem] text-xl rounded-lg flex items-center justify-center mt-2 p-2">
+          Get Started for FREE{" "}
+          <span className="mx-2">
+            <GoArrowRight />
+          </span>
+        </button>
+      </Link>
     </div>
   );
 };
