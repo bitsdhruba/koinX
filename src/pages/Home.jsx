@@ -1,5 +1,5 @@
 import GettingStarted from "../components/SingleCoin/MainSection/GettingStarted";
-import CoinList from "../components/HomePage/CoinList";
+import ListSection from "../components/HomePage/ListSection";
 
 const Home = () => {
   return (
@@ -11,15 +11,7 @@ const Home = () => {
       </div>
       <div className="my-6">
         <div className="flex">
-          <div className=" px-5 w-full">
-            <div className="w-3/5 m-auto">
-              <h1 className="text-center text-3xl font-sans">
-                Trending Crypto Currencies
-              </h1>
-              <CoinList />
-            </div>
-          </div>
-
+          <ListSection />
           <div className="w-1/2">
             <GettingStarted />
           </div>

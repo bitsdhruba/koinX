@@ -1,16 +1,13 @@
-const AboutBitcoin = () => {
+const AboutBitcoin = ({ coinData }) => {
   return (
     <div className="p-5 my-5 ">
-      <h1 className="text-3xl font-semibold mb-5">About Bitcoin</h1>
+      <h1 className="text-3xl font-semibold mb-5">About {coinData?.name}</h1>
       <section className="border-b border-slate-200 mb-4">
-        <h2 className="text-2xl font-semibold mb-4">What is Bitcoin</h2>
+        <h2 className="text-2xl font-semibold mb-4">
+          What is {coinData?.name}
+        </h2>
         <p className="text-xl mb-3 font-medium text-slate-700">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe
-          voluptatem earum ut consequatur neque exercitationem maiores, sequi
-          sunt, tenetur nesciunt amet a obcaecati ea autem. Et suscipit ipsa
-          ipsam praesentium deleniti alias, tempore quas esse eaque eveniet
-          neque blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Enim, veritatis?
+          {coinData?.description.en.slice(0, 250)}
         </p>
       </section>
       <section className="border-b border-slate-200">

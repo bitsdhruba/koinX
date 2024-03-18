@@ -2,10 +2,12 @@ import profit from "../../../../assets/profit.png";
 import tax from "../../../../assets/tax.png";
 import { GoArrowRight } from "react-icons/go";
 
-const HoldingBitcoin = () => {
+const HoldingBitcoin = ({ coinData }) => {
   return (
     <section className="my-5 p-5">
-      <h1 className="text-3xl font-semibold my-3">Already Holding Bitcoin</h1>
+      <h1 className="text-3xl font-semibold my-3">
+        Already Holding {coinData?.name}
+      </h1>
       <div className="flex justify-between my-6">
         <div className="w-[48%] h-[12rem] p-3 rounded-lg bg-gradient-to-br from-teal-500 to-cyan-800 flex">
           <div className="w-2/5 bg-cover flex items-center">

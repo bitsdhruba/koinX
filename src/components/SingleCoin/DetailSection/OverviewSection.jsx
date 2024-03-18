@@ -7,15 +7,15 @@ import Sentiment from "./OverViewSection/Sentiment";
 import Team from "./OverViewSection/Team";
 import Tokenomics from "./OverViewSection/Tokenomics";
 
-const OverviewSection = () => {
+const OverviewSection = ({ coinData }) => {
   return (
     <div className="w-[67%]">
-      <PerformanceSection />
-      <Fundamental />
+      <PerformanceSection coinData={coinData} />
+      <Fundamental coinData={coinData} />
       <Sentiment />
       <AnalystEstimates />
-      <AboutBitcoin />
-      <HoldingBitcoin />
+      <AboutBitcoin coinData={coinData} />
+      <HoldingBitcoin coinData={coinData} />
       <Tokenomics />
       <Team />
     </div>
