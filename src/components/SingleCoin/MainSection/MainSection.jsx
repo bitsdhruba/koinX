@@ -1,7 +1,7 @@
-import GettingStarted from "./MainSection/GettingStarted";
-import SingleCoinPrice from "./MainSection/SingleCoinPrice";
-import TradingChart from "./MainSection/TradingChart";
-import TrendingCoin from "./MainSection/TrendingCoin";
+import GettingStarted from "./GettingStarted";
+import SingleCoinPrice from "./SingleCoinPrice";
+import TrendingCoin from "./TrendingCoin";
+import TradeChart from "./TradeChart";
 
 const MainSection = ({ coinData }) => {
   return (
@@ -10,7 +10,9 @@ const MainSection = ({ coinData }) => {
         <div className="border-b border-slate-300 w-full h-fit">
           <SingleCoinPrice coinData={coinData} />
         </div>
-        <div className="w-full h-[70%] bg-blue-100 mt-6 overflow-hidden p-2"></div>
+        <div className="w-full h-[70%]  mt-6 overflow-hidden p-2">
+          <TradeChart />
+        </div>
       </div>
       <div className="w-2/5">
         <GettingStarted />

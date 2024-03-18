@@ -1,5 +1,5 @@
-import Detail_Nav from "./DetailSection/Detail_Nav";
-import OverviewSection from "./DetailSection/OverviewSection";
+import Detail_Nav from "./Detail_Nav";
+import OverviewSection from "./OverviewSection";
 
 const DetailSection = ({ coinData }) => {
   return (

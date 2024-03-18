@@ -3,7 +3,7 @@ import { RxTriangleUp } from "react-icons/rx";
 const SingleCoinPrice = ({ coinData }) => {
   return (
     <div className="w-full h-fit border-b border-slate-300">
-      <div className="w-2/5 h-fit pl-5 my-6">
+      <div className="w-[45%] h-fit pl-5 my-6">
         <div className="mb-4 flex items-center">
           <img
             src={coinData?.image.large}

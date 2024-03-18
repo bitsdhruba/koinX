@@ -6,12 +6,14 @@ import ResourceCenter from "./pages/NavBarPages/ResourceCenter";
 import GetStart from "./pages/NavBarPages/GetStart";
 import SingleCoin from "./pages/SingleCoin";
 import Home from "./pages/Home";
+import Breadcrumb from "./components/Breadcrumb";
 
 function App() {
   return (
     <BrowserRouter>
       <div>
         <Navbar />
+        <Breadcrumb />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/coin/:id" element={<SingleCoin />} />

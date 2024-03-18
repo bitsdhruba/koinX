@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import DetailSection from "../components/SingleCoin/DetailSection";
-import MainSection from "../components/SingleCoin/MainSection";
+import DetailSection from "../components/SingleCoin/DetailSection/DetailSection";
+import MainSection from "../components/SingleCoin/MainSection/MainSection";
 import axios from "axios";
 import { singleCoinDetail } from "../config/api";
 import { useParams } from "react-router-dom";
 import Loader from "../components/Loader/Loader";
+import AlsoLike from "../components/SingleCoin/AlsoLike/AlsoLike";
 
 const SingleCoin = () => {
   const { id } = useParams();
@@ -31,6 +32,7 @@ const SingleCoin = () => {
         <>
           <MainSection coinData={coinData} />
           <DetailSection coinData={coinData} />
+          <AlsoLike />
         </>
       )}
     </div>
