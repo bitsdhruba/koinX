@@ -18,16 +18,25 @@ const Tokenomics = () => {
   const options = {};
 
   return (
-    <section className="my-6 p-5">
-      <h1 className="text-3xl font-semibold my-3">Tokenomics</h1>
-      <h1 className="text-2xl my-5">Initial Distribution</h1>
-      <div className="flex gap-5">
-        <div className=" h-[15rem] w-[15rem]">
-          <Doughnut data={data} options={options}></Doughnut>
+    <section className="my-6">
+      <h1 className="text-2xl font-semibold my-3">Tokenomics</h1>
+      <h1 className="text-xl">Initial Distribution</h1>
+      <div className="sm:flex gap-5 my-3">
+        <div className="flex items-center justify-center">
+          <div className="h-[15rem] w-[15rem]">
+            <Doughnut data={data} options={options}></Doughnut>
+          </div>
         </div>
+
         <div className="px-3 flex flex-col  justify-center">
-          <h1 className="text-xl  my-2">🟡 Crowdsale Investors: 80%</h1>
-          <h1 className="text-xl  my-2">🔵 Foundation: 20%</h1>
+          <h1 className="text-lg  my-2">
+            🔵 Foundation:{" "}
+            <span className="text-lg text-blue-800 font-semibold">80%</span>
+          </h1>
+          <h1 className="text-lg  my-2">
+            🟡 Crowdsale Investors:{" "}
+            <span className="text-lg text-yellow-500 font-semibold"> 20%</span>
+          </h1>
         </div>
       </div>
       <p className="text-lg  my-5">

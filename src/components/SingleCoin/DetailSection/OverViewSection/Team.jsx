@@ -2,7 +2,7 @@ import robin from "../../../../assets/robin.png";
 
 const Team = () => {
   return (
-    <section className="p-5 my-6">
+    <section className="my-6">
       <h1 className="text-3xl font-semibold my-5">Team</h1>
       <p className="text-lg my-5">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita,
@@ -10,8 +10,8 @@ const Team = () => {
         ipsum quibusdam facilis sunt magni nam voluptatum tempora molestias aut!
         Natus.
       </p>
-      <div className="flex bg-blue-100 p-2 my-6 rounded-lg">
-        <div className="w-2/5 flex flex-col items-center">
+      <div className="sm:flex bg-blue-100 p-2 my-6 rounded-lg">
+        <div className="flex flex-col items-center">
           <div className="">
             <img
               src={robin}
@@ -27,7 +27,7 @@ const Team = () => {
           </div>
         </div>
         <div className="p-4 flex items-center">
-          <p className="text-lg">
+          <p className="text-md">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
             amet porro facilis in minus asperiores repellendus, deserunt
             perspiciatis dicta optio, ducimus officia accusantium sit
@@ -36,8 +36,8 @@ const Team = () => {
           </p>
         </div>
       </div>
-      <div className="flex bg-blue-100 p-2 my-6 rounded-lg">
-        <div className="w-2/5 flex flex-col items-center">
+      <div className="sm:flex bg-blue-100 p-2 my-6 rounded-lg">
+        <div className="flex flex-col items-center">
           <div className="">
             <img
               src={robin}
@@ -53,7 +53,7 @@ const Team = () => {
           </div>
         </div>
         <div className="p-4 flex items-center">
-          <p className="text-lg">
+          <p className="text-md">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
             amet porro facilis in minus asperiores repellendus, deserunt
             perspiciatis dicta optio, ducimus officia accusantium sit
@@ -62,8 +62,8 @@ const Team = () => {
           </p>
         </div>
       </div>
-      <div className="flex bg-blue-100 p-2 my-6 rounded-lg">
-        <div className="w-2/5 flex flex-col items-center">
+      <div className="sm:flex bg-blue-100 p-2 my-6 rounded-lg">
+        <div className="flex flex-col items-center">
           <div className="">
             <img
               src={robin}
@@ -79,7 +79,7 @@ const Team = () => {
           </div>
         </div>
         <div className="p-4 flex items-center">
-          <p className="text-lg">
+          <p className="text-md">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
             amet porro facilis in minus asperiores repellendus, deserunt
             perspiciatis dicta optio, ducimus officia accusantium sit

@@ -26,9 +26,9 @@ const TrendingCoin = () => {
   }, []);
 
   return (
-    <div className=" rounded-lg shadow-md m-6 p-3">
+    <div className=" rounded-lg shadow-md p-3">
       <h1 className="text-2xl m-2 font-bold">Trending Coins (24HR)</h1>
-      <div className="p-2">
+      <div>
         {load ? (
           <Loader />
         ) : (
@@ -36,7 +36,7 @@ const TrendingCoin = () => {
             {trending.map((coin) => {
               return (
                 <div
-                  className="border-b border-slate-400 text-xl mb-2 pb-2 p-2"
+                  className="border-b border-slate-400 mb-2 my-2 py-2"
                   key={coin.item.id}
                 >
                   <Link to={`/coin/${coin.item.id}`}>
@@ -45,13 +45,13 @@ const TrendingCoin = () => {
                         <img
                           src={coin.item.small}
                           alt={coin.item.name}
-                          className="w-8 h-8 bg-cover rounded-full m-2"
+                          className="size-8 bg-cover rounded-full m-2"
                         />
                         <div className="flex items-center">
-                          <span className="text-xl my-2 font-medium">
+                          <span className="text-lg font-medium">
                             {coin.item.name}
                           </span>
-                          <span className="text-xl font-medium uppercase">
+                          <span className="text-lg font-medium uppercase">
                             ({coin.item.symbol})
                           </span>
                         </div>
@@ -60,7 +60,7 @@ const TrendingCoin = () => {
                         {coin.item.data.price_change_percentage_24h.usd.toFixed(
                           2
                         ) < 0 ? (
-                          <span className="text-lg p-1 bg-red-200 rounded-lg text-red-600">
+                          <span className="text-md px-1 bg-red-200 rounded-lg text-red-600">
                             🔻
                             {coin.item.data.price_change_percentage_24h.usd.toFixed(
                               2
@@ -68,7 +68,7 @@ const TrendingCoin = () => {
                             %
                           </span>
                         ) : (
-                          <span className="text-lg p-1 bg-green-200 text-green-600 rounded-lg flex items-center">
+                          <span className="text-md px-1 bg-green-200 text-green-600 rounded-lg flex items-center">
                             <RxTriangleUp />
                             {coin.item.data.price_change_percentage_24h.usd.toFixed(
                               2

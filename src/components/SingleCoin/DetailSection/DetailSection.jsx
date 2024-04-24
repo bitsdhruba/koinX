@@ -3,7 +3,7 @@ import OverviewSection from "./OverviewSection";
 
 const DetailSection = ({ coinData }) => {
   return (
-    <div className="w-[85%] m-auto">
+    <div className="px-3 mt-8">
       <Detail_Nav />
       <OverviewSection coinData={coinData} />
     </div>

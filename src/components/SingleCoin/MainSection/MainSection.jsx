@@ -5,16 +5,16 @@ import TradeChart from "./TradeChart";
 
 const MainSection = ({ coinData }) => {
   return (
-    <div className="flex m-auto w-[85%]">
-      <div className="w-4/5 mt-6 rounded-lg">
+    <div className="sm:flex">
+      <div className="mt-6 rounded-lg w-full">
         <div className="border-b border-slate-300 w-full h-fit">
           <SingleCoinPrice coinData={coinData} />
         </div>
-        <div className="w-full h-[70%]  mt-6 overflow-hidden p-2">
+        <div className="w-full mt-6 overflow-hidden p-2">
           <TradeChart />
         </div>
       </div>
-      <div className="w-2/5">
+      <div className="w-2/5 hidden sm:inline ml-4">
         <GettingStarted />
         <TrendingCoin />
       </div>

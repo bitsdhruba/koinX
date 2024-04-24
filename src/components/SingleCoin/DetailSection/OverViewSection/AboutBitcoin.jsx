@@ -1,20 +1,18 @@
 const AboutBitcoin = ({ coinData }) => {
   return (
-    <div className="p-5 my-5 ">
-      <h1 className="text-3xl font-semibold mb-5">About {coinData?.name}</h1>
-      <section className="border-b border-slate-200 mb-4">
-        <h2 className="text-2xl font-semibold mb-4">
-          What is {coinData?.name}
-        </h2>
+    <div className="">
+      <h1 className="text-2xl font-semibold mb-5">About {coinData?.name}</h1>
+      <section className="border-b border-slate-200 mb-3">
+        <h2 className="text-xl font-semibold mb-3">What is {coinData?.name}</h2>
         <p className="text-xl mb-3 font-medium text-slate-700">
           {coinData?.description.en.slice(0, 250)}
         </p>
       </section>
       <section className="border-b border-slate-200">
-        <h1 className="text-2xl font-medium mb-4">
+        <h1 className="text-xl font-medium mb-3">
           Lorem ipsum dolor sit amet consectetur{" "}
         </h1>
-        <p className="text-xl mb-6 text-slate-700">
+        <p className="text-lg mb-4 text-slate-700">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
           excepturi? Soluta numquam dicta obcaecati, quia sed ea mollitia
           molestias neque laborum magni amet iusto fugit eos velit eius atque
@@ -26,7 +24,7 @@ const AboutBitcoin = ({ coinData }) => {
           cum animi illo quae natus veniam nostrum quidem quibusdam?
           Necessitatibus, odit consequuntur? Obcaecati, suscipit?
         </p>
-        <p className="text-xl mb-6 text-slate-700">
+        <p className="text-lg mb-4 text-slate-700">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
           excepturi? Soluta numquam dicta obcaecati, quia sed ea mollitia
           molestias neque laborum magni amet iusto fugit eos velit eius atque
@@ -38,7 +36,7 @@ const AboutBitcoin = ({ coinData }) => {
           adipisicing elit. Amet magni maiores vel tempore ipsa dolores dolor
           debitis? Quibusdam, quo magnam.
         </p>
-        <p className="text-xl mb-6 text-slate-700">
+        <p className="text-lg mb-4 text-slate-700">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
           excepturi? Soluta numquam dicta obcaecati, quia sed ea mollitia
           molestias neque laborum magni amet iusto fugit eos velit eius atque

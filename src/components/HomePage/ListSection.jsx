@@ -20,8 +20,8 @@ const ListSection = () => {
   }, []);
 
   return (
-    <div className=" px-5 w-full">
-      <div className="w-[70%] m-auto">
+    <div className=" px-3 w-full">
+      <div className="">
         <h1 className="text-center text-3xl my-8 bg-[#0052FE] text-white p-4 rounded-lg font-sans border-b border-slate-300 shadow-lg uppercase">
           Trending Crypto Currencies
         </h1>

@@ -9,7 +9,7 @@ import Tokenomics from "./OverViewSection/Tokenomics";
 
 const OverviewSection = ({ coinData }) => {
   return (
-    <div className="w-[67%]">
+    <div className="">
       <PerformanceSection coinData={coinData} />
       <Fundamental coinData={coinData} />
       <Sentiment />

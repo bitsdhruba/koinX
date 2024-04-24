@@ -1,17 +1,17 @@
 const AnalystEstimates = () => {
   return (
-    <div className="my-5 p-4">
-      <h1 className="text-3xl text-slate-600">Analysts Estimates</h1>
+    <div className="">
+      <h1 className="text-2xl text-slate-600">Analysts Estimates</h1>
       <div className="flex my-5 items-center">
-        <div className="w-[20%] flex items-center">
-          <div className="w-36 h-36 rounded-full bg-slate-200 flex items-center">
+        <div className="flex items-center">
+          <div className="w-[130px] h-[130px] rounded-full bg-green-200 flex items-center">
             <div className="m-auto flex items-center">
               <span className="text-5xl text-green-500">76</span>
               <span className="text-green-500 text-xl mx-1">%</span>
             </div>
           </div>
         </div>
-        <div className="w-[80%] h-fit">
+        <div className="w-full">
           <div className="flex items-center">
             <div className="mx-3">Buy</div>
             <div className="w-full h-full flex items-center">

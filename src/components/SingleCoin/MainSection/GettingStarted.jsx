@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const GettingStarted = () => {
   return (
-    <div className="bg-[#0052FE] h-fit flex flex-col items-center justify-between text-center p-14 m-6 rounded-xl">
+    <div className="bg-[#0052FE] h-fit flex flex-col items-center justify-between text-center m-3 p-14 rounded-xl">
       <h1 className="text-3xl font-bold text-white">
         Get Started with KoinX for FREE
       </h1>

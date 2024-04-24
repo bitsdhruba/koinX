@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="w-full h-[8vh]  shadow-lg">
-      <div className="w-[85%] h-full m-auto flex justify-between">
-        <div className="w-fit h-full">
+      <div className="max-w-[1200px] h-full mx-auto flex justify-between">
+        <div className="mx-3">
           <Link to="/">
             <div className="max-w-fit max-h-fit flex mt-[1.25rem] cursor-pointer">
               <span className="text-3xl font-bold">Koin</span>{" "}
@@ -13,7 +13,7 @@ const Navbar = () => {
             </div>
           </Link>
         </div>
-        <div className="w-[43%] h-full">
+        <div className=" hidden sm:inline w-1/2">
           <ul className="flex justify-between h-full text-xl font-medium">
             <li className="self-center cursor-pointer">
               <Link to="/cryptoTax">Crypto Taxes</Link>
